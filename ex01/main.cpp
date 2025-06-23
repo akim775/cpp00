@@ -6,7 +6,7 @@
 /*   By: ahamini <ahamini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 14:32:20 by ahamini           #+#    #+#             */
-/*   Updated: 2025/06/18 12:29:54 by ahamini          ###   ########.fr       */
+/*   Updated: 2025/06/23 10:14:40 by ahamini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main()
 	Phonebook phonebook;
 	std::string command;
 	
-	std::cout << "Welcome into the awesome PhoneBook !" << std::endl;
+	std::cout << "Welcome into The Awesome PhoneBook !" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Available commands: ADD, SEARCH, EXIT" << std::endl;
 	std::cout << std::endl;
@@ -34,7 +34,7 @@ int	main()
 			phonebook.add_contact();
 		}
 		else if (command == "SEARCH")
-			std::cout << "Search not implemented yet.\n";
+			phonebook.search_contact();
 		else
 			std::cout << "Unknown command.\n";
 	}
